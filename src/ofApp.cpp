@@ -2,9 +2,7 @@
 #include "ofxPS3EyeGrabber.h"
 
 //--------------------------------------------------------------
-void ofApp::setup(){
-    cam.setup(640, 480);
-    
+void ofApp::setup(){   
     cam.setGrabber(std::make_shared<ofxPS3EyeGrabber>());
     cam.setup(640, 480);
     cam.getGrabber<ofxPS3EyeGrabber>()->setAutoWhiteBalance(true);
